@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- font awesomme -->
+		<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Jungle Safari</title>
+		<link rel="icon" type="images/icon" href="images/ico.png"
+		<meta charset="utf-8"/>
+
+
+
+		<!-- Bootstrap CSS -->
+
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css">
+
+		</head>
+		<body>
+
+		<div class="container" id="main">
+
+			<nav class="navbar navbar-fixed-top navbar-inverse">
+
+
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="/"><img src="images/saf.jpg" height="45px" alt="safari"></a>
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Packages<strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Visit Zoo</a>
+									</li>
+
+									<li>
+										<a href="#">Forest Stay</a>
+									</li>
+
+									<li>
+										<a href="#">Jungle Safari</a>
+									</li>
+
+									<li>
+										<a href="#">River Rafting</a>
+									</li>
+
+
+								</ul><!-- end dropdown-menu -->
+							</li>
+						</ul>
+
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Search here..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+
+						<div class="nav navbar pull-right" id="asd">
+
+								<a href="#signup_Modal"  role="button" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-user"></span>Sign up</a>
+								<a href="#signin_Modal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-user"></span>Sign in</a>
+
+						</div>
+
+						<!-- nav navbar pull-right ends here-->
+					</div><!-- end nav-collapse -->
+
+
+			</nav><!-- end navbar -->
+
+			<div class="modal fade" id="signup_Modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+
+							<h4 class="modal-title">Enter your details</h4>
+						</div><!-- end modal-header -->
+
+							<hr>
+
+						<div class="modal-body">
+
+
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">Name</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="inputName" placeholder="Name" type="text">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="mobile number">mobile number</label>
+									<div class="col-lg-8">
+										<input class="form-control" id="mobile number" placeholder="enter 10 digit" type="text">
+									</div>
+								</div>
+							</form>
+						</div><!-- end modal-body -->
+
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Submit</button>
+						</div><!-- end modal-footer -->
+					</div><!-- end modal-content -->
+				</div><!-- end modal-dialog -->
+			</div><!-- end myModal -->
+			<!-- modal ends here -->
+
+				<!-- sign in modal starts here -->
+				<div class="modal fade" id="signin_Modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+
+								<h4 class="modal-title">Sign in</h4>
+							</div><!-- end modal-header -->
+
+								<hr>
+
+							<div class="modal-body">
+
+
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputName">userName</label>
+										<div class="col-lg-8">
+											<input class="form-control" id="inputName" placeholder="Name" type="text">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="password">Password</label>
+										<div class="col-lg-8">
+											<input class="form-control" id="password" placeholder="password" type="text">
+										</div>
+									</div>
+
+
+								</form>
+							</div><!-- end modal-body -->
+
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-danger" type="button">Sign in</button>
+							</div><!-- end modal-footer -->
+						</div><!-- end modal-content -->
+					</div><!-- end modal-dialog -->
+				</div><!-- end sign in Modal -->
+
+			<div class="carousel slide" id="myCarousel">
+
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+					<li data-slide-to="3" data-target="#myCarousel"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Bird Sanctuary</h4>
+							<p>Get amazed by the beautiful migratory birds.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Big Cats Darshan</h4>
+							<p>Get enchanted by seeing beauty of this endangered species.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>Elephant Safari</h4>
+							<p>Take a mesmerising ride of the jungle on elephant.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide4">
+						<div class="carousel-caption">
+							<h4>Remarkable Reptiles</h4>
+							<p>Experience nature with various species of crocodiles &amp; snakes.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+				</div><!-- carousel-inner -->
+
+
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"</span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+
+			</div> <!-- end myCarousel -->
+
+			<!-- jumbotron starts -->
+
+			<div class="jumbotron">
+  			<h1>Amazing Wildlife</h1>
+  					<p>You can visit all the places and wild animals of our wildlife national park</p>
+  							<p><a class="btn btn-primary btn-lg" href="#" role="button">View gallery</a></p>
+			</div><!-- end jumbotron here -->
+
+
+			<div class="row" id="virtualTour">
+				<div class="col-12">
+					<h2>Virtual Tour</h2>
+					<p class="lead">Take a virtual tour of our fascinating wild life.Wild animals which you will be seeing in our jaungle Safari.</p>
+				</div><!-- end col-12 -->
+			</div><!-- end virtual tour -->
+
+
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Mammals</h3>
+						</div><!-- end panel-heading -->
+
+						<div class="embed-responsive embed-responsive-4by3" >
+									<iframe id="video" width="300px" height="200px" src="https://www.youtube.com/embed/kACaok7DRlM" allowfullscreen></iframe>
+						</div>
+
+						<p>Watch the above video to get more information regarding the mammal species.</p>
+
+						<a href="https://www.youtube.com/watch?v=kACaok7DRlM" target="_blank" class="btn btn-warning btn-block">Click here to watch on youtube</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Reptiles</h3>
+						</div><!-- end panel-heading -->
+
+								<div class="embed-responsive embed-responsive-4by3" >
+									<iframe id="video" width="300px" height="200px" src="https://www.youtube.com/embed/B3OjfK0t1XM" allowfullscreen></iframe>
+								</div>
+
+						<p>Watch the above video to get more information regarding the reptile kingdom.</p>
+
+						<a href="https://www.youtube.com/watch?v=B3OjfK0t1XM" target="_blank" class="btn btn-danger btn-block">Click here to watch on youtube</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Birds</h3>
+						</div><!-- end panel-heading -->
+							<div class="embed-responsive embed-responsive-4by3" >
+									<iframe id="video" width="300px" height="200px" src="https://www.youtube.com/embed/7c1T7Gv6HDc" allowfullscreen></iframe>
+							</div>
+
+						<p>Watch the above video to get more information regarding the Bird kingdom.</p>
+
+						<a href="https://www.youtube.com/watch?v=7c1T7Gv6HDc" target="_blank" class="btn btn-info btn-block">Click here to watch on youtube</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+
+
+			<div class="row" id="moreInfo">
+				<div class="col-sm-12">
+					<h3>Explore</h3>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Map</a></li>
+							<li><a href="#tab2" data-toggle="tab">Photos</a></li>
+							<li><a href="#tab3" data-toggle="tab">Natural reserves</a></li>
+
+						</ul>
+
+
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span>Location</h4>
+
+									<iframe height="200px" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.6166972200117!2d77.6386214579546!3d12.892708447726905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14bafbf1436b%3A0x2f4d47b35e61e234!2sGarvebhavipalya%2C+Hosapalaya%2C+Muneshwara+Nagar%2C+Bengaluru%2C+Karnataka+560068!5e0!3m2!1sen!2sin!4v1480175596682" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+								</div><!-- end tab-pane -->
+
+							<div class="tab-pane" id="tab2">
+
+								<div class="row">
+  								<div class="col-xs-6 col-md-3">
+    								<a href="#" class="thumbnail">
+      								<img class="ima" src="images/wildlife_large.jpg" alt="bird">
+											<img class="ima" src="images/band.jpg" alt="band">
+											<img class="ima" src="images/Bandipur.jpg" alt="Bandipur">
+											<img class="ima" src="images/frog.jpg" alt="frog">
+    								</a>
+  								</div>
+  							</div>
+
+							</div><!-- end tab-pane -->
+
+							<div class="tab-pane" id="tab3">
+								<h3>Natural Reserves</h3>
+								<p>Local Wildlife Sites are areas identified and selected locally for their great wildlife value. The designation is non-statutory but is recognition of a site’s significance with many sites being of county and often regional importance for wildlife. Examples range from field ponds, streams and reedbeds, to ancient woodlands, flower-rich meadows and hedgerows. They can be found on land including farms, small holdings, roadside verges and parks.</p>
+								<p>With over 40,000 Local Wildlife Sites in the UK this is a well established system.  In Leicestershire and Rutland we have 1,000 Local Wildlife Sites covering well over 3,000 hectares, but this is still less than 2% of the land area of the two counties.Local Wildlife Sites are designated according to selection criteria, which are prepared by the Local Wildlife Sites Panel, made up of local nature conservation experts.</p>
+								<p>Local Wildlife Sites are the grass-roots of nature conservation. Not only are they important in their own right, but they also create a vital network of wildlife rich sites reaching across districts and counties. These qualities make the natural environment as a whole more robust and able to cope with change.</p>
+
+							</div> <!-- end tab3 -->
+
+
+						</div><!-- end tab-content -->
+					</div><!-- end tabbable -->
+				</div><!-- end col-sm-12 -->
+
+			</div><!-- end moreInfo -->
+
+
+
+
+		</div><!-- end container -->
+						<hr>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+					<h6>Copyright &copy; 2016 Arpit</h6>
+					</div><!-- end col-sm-2 -->
+
+
+					<div class="col-sm-4">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Aboutus</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-4">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><span class="glyphicon glyphicon-heart"></span><a href="#">Twitter</a></li>
+							<li><span class="glyphicon glyphicon-thumbs-up"></span><a href="#">Facebook</a></li>
+							<li><span class="glyphicon glyphicon-envelope"></span><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+
+
+	<!-- hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	</body>
+</html>
