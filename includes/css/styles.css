@@ -17,9 +17,9 @@ Updated: November 2016
 	text-align: center;
 }
 
-
-
-
+#tab3 p{
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
 #features img {
 	margin: 0 0 20px;
